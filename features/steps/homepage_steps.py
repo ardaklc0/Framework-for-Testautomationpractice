@@ -18,4 +18,4 @@ def step_impl(context):
 @then('the home page should be displayed')
 def step_impl(context):
     context.home_page = HomePage(context.driver)
-    assert context.driver.find_element(By.CLASS_NAME, context.home_page.welcome_link_class).is_displayed()
+    assert context.driver.find_element(By.XPATH, context.home_page.h1_text_xpath).is_displayed()

@@ -1,9 +1,9 @@
 #CONSTANTS
 import inspect
 
-URL = "https://opensource-demo.orangehrmlive.com/"
-USERNAME = "Admin"
-PASSWORD = "admin123"
+URL = "https://www.saucedemo.com/"
+USERNAME = "visual_user"
+PASSWORD = "secret_sauce"
 
 
 def whoami():

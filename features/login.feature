@@ -1,9 +1,9 @@
 Feature: Login and Logout
   As a user
-  I want to login and logout of the OrangeHRM application
+  I want to login and logout of the Sauce Labs application
 
   Scenario: Valid Login
-    Given the OrangeHRM login page is displayed
+    Given the Sauce Labs login page is displayed
     When the user enters valid username and password
     And clicks the login button
     Then the home page should be displayed

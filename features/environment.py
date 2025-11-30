@@ -6,11 +6,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 import allure
 from allure_commons.types import AttachmentType
 
-def before_scenario(context, scenario):
-    # Default to chrome, but could be extended to read from userdata or env vars
-    # Behave doesn't have a built-in command line option parser for custom args like pytest
-    # But we can use userdata.
-    
+def before_scenario(context, scenario):    
     browser_name = context.config.userdata.get("browser", "chrome")
 
     if browser_name == 'chrome':

@@ -5,15 +5,24 @@ class HomePage():
     def __init__(self, driver):
         self.driver = driver
 
-        self.welcome_link_class = "app_logo"
-        self.hamburger_menu_id = "react-burger-menu-btn"
-        self.logout_link_linkText = "Logout"
+        self.username_textbox_id = "name"
+        self.email_textbox_id = "email"
+        self.phone_textbox_id = "phone"
+        self.address_textbox_id = "textarea"
+        self.welcome_link_class = "title"
 
-    def click_welcome(self):
-        self.driver.find_element(By.CLASS_NAME, self.welcome_link_class).click()
+    def enter_username(self, username):
+        self.driver.find_element(By.ID, self.username_textbox_id).clear()
+        self.driver.find_element(By.ID, self.username_textbox_id).send_keys(username)
 
-    def click_hamburger_menu(self):
-        self.driver.find_element(By.ID, self.hamburger_menu_id).click()
+    def enter_email(self, email):
+        self.driver.find_element(By.ID, self.email_textbox_id).clear()
+        self.driver.find_element(By.ID, self.email_textbox_id).send_keys(email)
+    
+    def enter_phone(self, phone):
+        self.driver.find_element(By.ID, self.phone_textbox_id).clear()
+        self.driver.find_element(By.ID, self.phone_textbox_id).send_keys(phone)
 
-    def click_logout(self):
-        self.driver.find_element(By.LINK_TEXT, self.logout_link_linkText).click()
+    def enter_address(self, address):
+        self.driver.find_element(By.ID, self.address_textbox_id).clear()
+        self.driver.find_element(By.ID, self.address_textbox_id).send_keys(address)

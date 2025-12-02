@@ -1,8 +1,8 @@
-Feature: Login and Logout
+Feature: Field Filling
   As a user
-  I want to login and logout of the Automation Testing Practice application
+  I want to fill fields in the Automation Testing Practice application
 
-  Scenario: Valid Login
+  Scenario: Filling fields with valid credentials
     Given Automation Testing Practice page is displayed
     When the user enters valid credentials
     Then the home page should be displayed

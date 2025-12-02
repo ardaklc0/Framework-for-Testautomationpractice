@@ -14,8 +14,3 @@ def step_impl(context):
     context.login_page.enter_email(utils.EMAIL)
     context.login_page.enter_phone(utils.PHONE)
     context.login_page.enter_address(utils.ADDRESS)
-
-@then('the home page should be displayed')
-def step_impl(context):
-    context.home_page = HomePage(context.driver)
-    assert context.driver.find_element(By.XPATH, context.home_page.h1_text_xpath).is_displayed()

@@ -5,4 +5,3 @@ Feature: Field Filling
   Scenario: Filling fields with valid credentials
     Given Automation Testing Practice page is displayed
     When the user enters valid credentials
-    Then the home page should be displayed

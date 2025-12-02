@@ -9,7 +9,6 @@ class HomePage():
         self.email_textbox_id = "email"
         self.phone_textbox_id = "phone"
         self.address_textbox_id = "textarea"
-        self.h1_text_xpath = "//h1['Automation Testing Practice']" 
 
     def enter_username(self, username):
         self.driver.find_element(By.ID, self.username_textbox_id).clear()
